@@ -11,14 +11,13 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "npx @tailwindcss/cli -i src/styles/style.css -o src/index.css --watch && npm run dev"
+    "start": "npm run dev"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/RazFernandez/Official_portfolio_web.git"
   },
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.8",
     "@tailwindcss/vite": "^4.1.8",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
