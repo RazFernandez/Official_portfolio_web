@@ -2,7 +2,7 @@
   "name": "official-portfolio-web",
   "author": "Miguel Fernández",
   "description": "My main web portfolio to showcase projects",
-  "license":"MIT",
+  "license": "MIT",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -18,6 +18,7 @@
     "url": "https://github.com/RazFernandez/Official_portfolio_web.git"
   },
   "dependencies": {
+    "@tailwindcss/cli": "^4.1.8",
     "@tailwindcss/vite": "^4.1.8",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
