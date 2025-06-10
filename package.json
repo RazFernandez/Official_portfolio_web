@@ -11,7 +11,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "npm run dev"
+    "start": "npx @tailwindcss/cli -i src/styles/style.css -o src/index.css --watch && npm run dev"
   },
   "repository": {
     "type": "git",
