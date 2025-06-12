@@ -6,6 +6,11 @@ html, body{
   padding: 0;
 }
 
+@layer base {
+  html {
+      @apply bg-dark-bg-600;
+  }
+}
 
 @theme {
 
