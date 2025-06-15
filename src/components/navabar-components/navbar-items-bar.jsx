@@ -28,5 +28,12 @@ export function NavbarItem({ children, isCurrentPage = false }) {
         </li>
     );
 
+}
 
+export function NavBarItemIcon(){
+    return (
+        <div>
+            
+        </div>
+    );
 }
