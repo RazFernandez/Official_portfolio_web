@@ -57,7 +57,7 @@ export function NavBarItemIcon({ children, url, ImageIcon = "", ImageDescription
     if (ImageIcon === "") {
         return (
             <li>
-                <a href={url} target="_blank" class="block py-3 px-4 text-white md:cursor-pointer md:hover:bg-primary-500 md:focus:bg-secondary-500 transition duration-300 ease-in-out">
+                <a href={url} target="_blank" className="block py-3 px-4 text-white md:cursor-pointer md:hover:bg-primary-500 md:focus:bg-secondary-500 transition duration-300 ease-in-out">
                     {children}
                 </a>
             </li>
