@@ -12,6 +12,9 @@ export default function NavbarItemBar() {
                 <NavbarItem>ABOUT ME</NavbarItem>
                 <NavbarItem>PORTFOLIO</NavbarItem>
                 <NavbarItem>SKILLS</NavbarItem>
+                <NavBarItemIcon></NavBarItemIcon>
+                <NavBarItemIcon></NavBarItemIcon>
+                <NavBarItemIcon></NavBarItemIcon>
             </ul>
         </div>
     );
@@ -55,13 +58,28 @@ export function NavbarItem({ children, isCurrentPage = false }) {
     if active or not.
 */
 
-export function NavBarItemIcon(){
-    return (
-        <div>
-            
-        </div>
-    );
+export function NavBarItemIcon({ children, url, ImageIcon = "", ImageDescription = "" }) {
+    
+    if (ImageIcon === "") {
+        return (
+            <li>
+                <a href={url} target="_blank" class="block py-3 px-4 text-white md:cursor-pointer md:hover:bg-primary-500 md:focus:bg-secondary-500 transition duration-300 ease-in-out">
+                    {children}
+                </a>
+            </li>
+        );
+    } else {
+        return (
+            <li>
+                <a href={url} target="_blank" class="block py-3 px-4 text-white md:cursor-pointer md:hover:bg-primary-500 md:focus:bg-secondary-500 transition duration-300 ease-in-out">
+                    <img src={ ImageIcon } alt={ ImageDescription} />
+                </a>
+            </li>
+        );
+    }
 }
+
+    
 
 /*
     This component it's a type of navbar item that displays 
