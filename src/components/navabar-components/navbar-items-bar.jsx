@@ -1,4 +1,10 @@
-export default function NavbarItemBar(){
+/*
+    The first function called NavbarItemBar exposes the 
+    section of the navbar elements to be included
+    in the main navbar.
+*/
+
+export default function NavbarItemBar() {
     return (
         <div className="w-full hidden md:block md:w-auto">
             <ul className="font-exo2 flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-dark-bg-700 md:bg-dark-bg-900 dark:border-gray-700">
@@ -10,6 +16,19 @@ export default function NavbarItemBar(){
         </div>
     );
 }
+
+/*
+    This is the blueprint for building the sections in a typical
+    navbar. You can chose between two styles, whether it's active
+    (Meaning the item highlights the page you are currently on)
+    or not the item section.
+*/
+
+/* 
+    This component creates a typical navbar item that only
+    displays text and you can indicate if active (represents the
+    current page) or not
+*/
 
 export function NavbarItem({ children, isCurrentPage = false }) {
     
@@ -30,10 +49,30 @@ export function NavbarItem({ children, isCurrentPage = false }) {
 
 }
 
+/*
+    This component it's a type of navbar item that displays 
+    an icon or image instead of text. You can also indicate
+    if active or not.
+*/
+
 export function NavBarItemIcon(){
     return (
         <div>
             
+        </div>
+    );
+}
+
+/*
+    This component it's a type of navbar item that displays 
+    an icon or image instead of text. You can also indicate
+    if active or not.
+*/
+
+export function NavBarItemDropdown() {
+    return (
+        <div>
+
         </div>
     );
 }

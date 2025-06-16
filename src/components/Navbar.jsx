@@ -4,6 +4,10 @@ import NavbarItemBar from './navabar-components/navbar-items-bar';
 import BurgerButton from './navabar-components/navbar-burger-button';
 import { BugerButtonIcon } from './Icon-components/Icons-svg';
 
+/* 
+    This is the final navbar displayed in my portfolio web.
+*/
+
 export function Navbar() {
     return (
         <nav className="bg-dark-bg-900">

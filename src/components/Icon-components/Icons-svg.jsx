@@ -1,6 +1,9 @@
 /* 
     This file contains SVG images as HTML values to ensure
-    their usability in the webpage
+    their usability in the webpage as child component.
+    
+    For instance, they can be used as icon in buttons,
+    background images or for simply stalying.
 */
 
 export function BugerButtonIcon() {
