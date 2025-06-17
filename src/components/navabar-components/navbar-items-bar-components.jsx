@@ -57,7 +57,7 @@ export function NavBarItemIcon({ children, url, ImageIcon = "", ImageDescription
     if (ImageIcon === "") {
         return (
             <li>
-                <a href={url} target="_blank" className="block py-3 px-4 text-white md:cursor-pointer md:hover:bg-primary-500 md:focus:bg-secondary-500 transition duration-300 ease-in-out">
+                <a href={url} target="_blank" className="hidden md:block py-3 px-4 text-white md:cursor-pointer md:hover:bg-primary-500 md:focus:bg-secondary-500 transition duration-300 ease-in-out">
                     {children}
                 </a>
             </li>
@@ -65,7 +65,7 @@ export function NavBarItemIcon({ children, url, ImageIcon = "", ImageDescription
     } else {
         return (
             <li>
-                <a href={url} target="_blank" class="block py-3 px-4 text-white md:cursor-pointer md:hover:bg-primary-500 md:focus:bg-secondary-500 transition duration-300 ease-in-out">
+                <a href={url} target="_blank" class="hidden md:block py-3 px-4 text-white md:cursor-pointer md:hover:bg-primary-500 md:focus:bg-secondary-500 transition duration-300 ease-in-out">
                     <img src={ ImageIcon } alt={ ImageDescription} />
                 </a>
             </li>
@@ -80,10 +80,55 @@ export function NavBarItemIcon({ children, url, ImageIcon = "", ImageDescription
     if active or not.
 */
 
-export function NavBarItemDropdown() {
-    return (
-        <div>
+export function NavBarItemDropdown({children, dropdownName, onClickEvent}) {
+    const defaultPageStyleButton = "md:hidden flex items-center justify-between w-full py-3 px-4 text-white hover:bg-primary-500 focus:bg-secondary-500 transition duration-300 ease-in-out md:w-auto"
+    
 
+    return (
+        <>
+            <button className={defaultPageStyleButton} onClick={onClickEvent}> {dropdownName}
+                <svg className="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 10 6">
+                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                        d="m1 1 4 4 4-4" />
+                </svg>
+            </button>
+            {children}
+        </>
+    );
+}
+
+/*
+    This components it's the layour for storing menuItems
+    components
+*/
+
+export function NavbarMenuItems({ children, isOpen}) {
+    
+    const defaultMenustyle = `z-10 ${isOpen ? "bloc" : "hidden"} font-normal bg-secondary-800 divide-y divide-gray-600 rounded-lg shadow-sm w-44`
+
+    return (
+        <div className={defaultMenustyle}>
+            <ul className="py-2 text-sm text-gray-200">
+                {children}
+            </ul>
         </div>
+    );
+}
+
+/*
+    This component it's submenu item that goes
+    inside a NavbarMenuItems or another layout
+*/
+
+export function NavbarSubItem({ children, href}) {
+    
+    const defaultSubItemStyleButton = "md:hidden flex items-center justify-between w-full py-3 px-4 text-white hover:bg-primary-500 focus:bg-secondary-500 transition duration-300 ease-in-out md:w-auto"
+
+    return (
+        <li>
+            <a href={href} target="_blank"
+                className={defaultSubItemStyleButton}>{children}</a>
+        </li>
     );
 }
