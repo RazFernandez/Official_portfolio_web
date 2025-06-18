@@ -7,6 +7,13 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
+      <p>sss</p>
       <Footer></Footer>
     </>
   )
