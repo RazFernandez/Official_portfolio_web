@@ -35,7 +35,7 @@ export function Footer() {
                         <ul className="flex flex-wrap items-center gap-x-4 md:gap-x-8">
                             <li>
                                 <a href="#">
-                                    <GithubIcon></GithubIcon>
+                                    <GithubIcon onHover="fill-primary-500"></GithubIcon>
                                 </a>
                             </li>
                             <li>
