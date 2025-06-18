@@ -40,12 +40,12 @@ export function Footer() {
                             </li>
                             <li>
                                 <a href="#">
-                                    <LinkedInIcon></LinkedInIcon>
+                                    <LinkedInIcon onHover="fill-primary-500"></LinkedInIcon>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <MediumIcon></MediumIcon>
+                                    <MediumIcon onHover="fill-primary-500"></MediumIcon>
                                 </a>
                             </li>
                             
@@ -53,7 +53,7 @@ export function Footer() {
                         </ul>
                     </div>
                     <div>
-                        <p>@2024 All Rights Reserved</p>
+                        <p>@2025 All Rights Reserved</p>
                     </div>
                 </div>
             </div>
