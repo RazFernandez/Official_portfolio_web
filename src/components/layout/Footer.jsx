@@ -5,7 +5,7 @@
     section 
 */
 
-import { GithubIcon, LinkedInIcon, MediumIcon } from "./Icon-components/Icons-svg";
+import { GithubIcon, LinkedInIcon, MediumIcon } from "../icons/Icons-svg";
 
 export function Footer() {
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavbarItem, NavBarItemIcon, NavBarItemDropdown, NavbarSubItem, NavbarMenuItems } from "./navbar-items-bar-components";
-import { GithubIcon, LinkedInIcon, MediumIcon } from "../Icon-components/Icons-svg";
+import { GithubIcon, LinkedInIcon, MediumIcon } from "../../icons/Icons-svg";
 
 /*
     This component is a blueprint that builds the

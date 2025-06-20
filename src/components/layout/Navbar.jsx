@@ -1,9 +1,9 @@
 import { useState } from "react";
-import MyLogo from '../assets/images/VentoTech-icon.png';
-import NavbarItemBar from './navabar-components/navbar-items-bar';
-import BurgerButton from './navabar-components/navbar-burger-button';
-import { BugerButtonIcon } from './Icon-components/Icons-svg';
-import { NavbarFavicon} from './navabar-components/navbar-items-bar-components';
+import MyLogo from '../../assets/images/VentoTech-icon.png';
+import NavbarItemBar from './Navbar/navbar-items-bar';
+import BurgerButton from './Navbar/navbar-burger-button';
+import { BugerButtonIcon } from '../icons/Icons-svg';
+import { NavbarFavicon} from './Navbar/navbar-items-bar-components';
 
 /* 
     This is the final navbar displayed in my portfolio web.

@@ -1,7 +1,7 @@
 import './App.css'
-import { Navbar } from './components/Navbar'
-import { Footer } from './components/Footer'
-import HereSection from './main-pages/Home/hero-section'
+import { Navbar } from './components/layout/Navbar'
+import { Footer } from './components/layout/Footer'
+import HereSection from './Pages/Home/hero-section'
 function App() {
   
 
