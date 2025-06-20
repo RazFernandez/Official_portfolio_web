@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavbarItem, NavBarItemIcon, NavBarItemDropdown, NavbarSubItem, NavbarMenuItems } from "./navbar-items-bar-components";
+import { NavbarItem, NavBarItemIcon, NavBarItemDropdown, NavbarSubItem, NavbarMenuItems } from "./navbarItemsBarComponents";
 import { GithubIcon, LinkedInIcon, MediumIcon } from "../../icons/Icons-svg";
 
 /*
