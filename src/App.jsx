@@ -1,19 +1,14 @@
 import './App.css'
 import { Navbar } from './components/Navbar'
 import { Footer } from './components/Footer'
+import HereSection from './main-pages/Home/hero-section'
 function App() {
   
 
   return (
     <>
       <Navbar></Navbar>
-      <p>sss</p>
-      <p>sss</p>
-      <p>sss</p>
-      <p>sss</p>
-      <p>sss</p>
-      <p>sss</p>
-      <p>sss</p>
+      <HereSection></HereSection>
       <Footer></Footer>
     </>
   )
