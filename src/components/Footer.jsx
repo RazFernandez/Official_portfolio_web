@@ -37,17 +37,17 @@ export function Footer() {
                         <ul className="flex flex-wrap items-center gap-x-4 md:gap-x-8">
                             <li>
                                 <a href="#">
-                                    <GithubIcon onHover="fill-primary-500"></GithubIcon>
+                                    <GithubIcon isHover={true}></GithubIcon>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <LinkedInIcon onHover="fill-primary-500"></LinkedInIcon>
+                                    <LinkedInIcon isHover={true}></LinkedInIcon>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <MediumIcon onHover="fill-primary-500"></MediumIcon>
+                                    <MediumIcon isHover={true}></MediumIcon>
                                 </a>
                             </li>
                         </ul>

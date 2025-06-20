@@ -26,14 +26,13 @@ export function BugerButtonIcon() {
     );
 }
 
-export function GithubIcon({ onHover }) {
-    const baseClasses = 'w-6 h-6 text-white';
-    const hoverClass = onHover ? `hover:${onHover} transition duration-300 ease-in-out` : '';
-    const combinedClasses = `${baseClasses} ${hoverClass}`.trim();
+export function GithubIcon({ isHover }) {
+    const hoverClass = isHover ? 'hover:fill-primary-500' : '';
+    const styleIconClass = `w-6 h-6 text-white ${hoverClass} transition duration-300 ease-in-out`
 
     return (
         <svg
-            className={combinedClasses}
+            className={styleIconClass}
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -50,14 +49,13 @@ export function GithubIcon({ onHover }) {
     );
 }
 
-export function LinkedInIcon({ onHover }) {
-    const baseClasses = 'w-6 h-6 text-white';
-    const hoverClass = onHover ? `hover:${onHover} transition duration-300 ease-in-out` : '';
-    const combinedClasses = `${baseClasses} ${hoverClass}`.trim();
+export function LinkedInIcon({ isHover }) {
+    const hoverClass = isHover ? 'hover:fill-primary-500' : '';
+    const styleIconClass = `w-6 h-6 text-white ${hoverClass} transition duration-300 ease-in-out`
 
     return (
         <svg
-            className={combinedClasses}
+            className={styleIconClass}
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -76,14 +74,13 @@ export function LinkedInIcon({ onHover }) {
 }
 
 
-export function MediumIcon({ onHover }) {
-    const baseClasses = 'w-6 h-6 text-white';
-    const hoverClass = onHover ? `hover:${onHover} transition duration-300 ease-in-out` : '';
-    const combinedClasses = `${baseClasses} ${hoverClass}`.trim();
+export function MediumIcon({ isHover = false }) {
+    const hoverClass = isHover ? 'hover:fill-primary-500' : '';
+    const styleIconClass = `w-6 h-6 text-white ${hoverClass} transition duration-300 ease-in-out`
 
     return (
         <svg
-            className={combinedClasses}
+            className={styleIconClass}
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
