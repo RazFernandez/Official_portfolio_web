@@ -1,4 +1,6 @@
-import HeroLogoPage from "./hero-logo";
+import HeroLogo from "../../assets/images/LogoPortfolioWeb.png"
+import FilledButton from "../../components/common/filledButton";
+import OutlinedButton from "../../components/common/outlinedButton";
 
 export default function HereSection() {
 
@@ -6,9 +8,14 @@ export default function HereSection() {
         <section className="bg-dark-bg-700">
             <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                 <div className="mr-auto place-self-center lg:col-span-7">
-                    <h2 className="max-w-2xl mb-6 font-exo2 font-light text-white lg:mb-8 md:text-lg lg:text-xl">Hi there! I'm Miguel Fernandez</h2>
+                    <h2 className="max-w-2xl mb-6 font-exo2 font-light text-white lg:mb-8 md:text-xl lg:text-3xl">Hi there! I'm Miguel Fernandez</h2>
                     <h1 className="max-w-2xl mb-4 text-4xl font-exo2 tracking-tight leading-none md:text-5xl xl:text-6xl text-primary-500">SOFTWARE ENGINEER</h1>
-                    <p className="max-w-2xl mb-6 font-lato font-light text-white lg:mb-8 md:text-lg lg:text-xl">Keep it simple, make it possible. Focused on simplicity and innovation in Backend development. With a passion for learning the latest technologies, I'm exited to share my projects with you. Ready to explore?</p>
+                    <p className="max-w-2xl mb-6 font-lato font-light text-white lg:mb-8 md:text-lg lg:text-lg">Keep it simple, make it possible. Focused on simplicity and innovation in Backend development. With a passion for learning the latest technologies, I'm exited to share my projects with you. Ready to explore?</p>
+                    <FilledButton>About me</FilledButton>
+                    <OutlinedButton>My portfolio</OutlinedButton>
+                </div>
+                <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                    <img src={HeroLogo} width={500} alt="Laptop Logo" />
                 </div>
             </div>
         </section>
