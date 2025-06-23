@@ -1,4 +1,4 @@
-import './App.css'
+import './styles/index.css'
 import { Navbar } from './components/layout/Navbar'
 import { Footer } from './components/layout/Footer'
 import HereSection from './Pages/Home/hero-section'

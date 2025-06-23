@@ -1,6 +1,6 @@
 /* 
     This file contains all of the styles
-    used in bottons following the tailwind
+    used in bottons following the tailwind css
     style of using classes to style components
     instead of pure css.
 */
