@@ -8,10 +8,10 @@
     exact style you want to apply to your components
 */
 
-import ButtonsStyles from "./styleClasses/buttons";
+import BUTTONS_STYLES from "./styleClasses/buttons";
 
 const styles = {
-    buttons: ButtonsStyles,
+    buttons: BUTTONS_STYLES,
 }
 
 export default styles;

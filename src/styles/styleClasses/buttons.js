@@ -5,7 +5,7 @@
     instead of pure css.
 */
 
-const ButtonsStyles = {
+const BUTTONS_STYLES = {
     filled:
         "inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-lato font-medium text-center text-white rounded-lg bg-primary-500 hover:bg-secondary-500 focus:ring-4 focus:ring-primary-900 transition duration-300 ease-in-out",
     outlined:
@@ -13,4 +13,4 @@ const ButtonsStyles = {
 
 };
 
-export default ButtonsStyles;
+export default BUTTONS_STYLES;
