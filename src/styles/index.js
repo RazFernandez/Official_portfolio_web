@@ -8,7 +8,7 @@
     exact style you want to apply to your components
 */
 
-import BUTTONS_STYLES from "./styleClasses/buttons";
+import BUTTONS_STYLES from "./components/buttons";
 
 const styles = {
     buttons: BUTTONS_STYLES,

@@ -3,7 +3,7 @@ import FilledButton from "../../components/common/filledButton";
 import OutlinedButton from "../../components/common/outlinedButton";
 import { HERO_INFO } from "../../strings/content/home";
 
-export default function HereSection() {
+export default function HeroSection() {
 
     return (
         <section className="bg-dark-bg-700">
