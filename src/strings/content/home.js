@@ -14,10 +14,11 @@
     https://github.com/RazFernandez/Official_portfolio_web
 */
 
-export const HERO_INFO = {
+const HERO_INFO = {
     greetings: "Hi there! I'm Miguel Fernández",
     career: "SOFTWARE ENGINEER",
     description: "Keep it simple, make it possible. Focused on simplicity and innovation in Backend development. With a passion for learning the latest technologies, I'm exited to share my projects with you. Ready to explore?",
     buttonsLabel: ["About Me", "My Portfolio"],
 }
 
+export default HERO_INFO;

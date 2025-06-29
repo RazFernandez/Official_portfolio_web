@@ -4,11 +4,11 @@
     web for better maintenance
 */
 
-const sectionNames = {
+const SECTION_NAMES = {
     home: ["Lastest Projects", "Tech Toolbox"],
     aboutMe: ["Personal Principles", "Badges and Certifications", "Beyond Programming"],
     portfolio: ["Professional Experience", "Personal Projects"],
     skills: ["Programming Languages"]
 }
 
-export default sectionNames;
+export default SECTION_NAMES;
