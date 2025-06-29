@@ -7,7 +7,6 @@ export default function LastestProjectsSection(){
             <HeadlineLayout>
                 <HeadLine>Lastest Projects</HeadLine>
             </HeadlineLayout>
-            
         </>
     );
 }
