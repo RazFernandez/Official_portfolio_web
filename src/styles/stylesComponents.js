@@ -1,6 +1,6 @@
 /*
     This class is intended to group all of the styles
-    according to components and layouts for better 
+    according to components for better 
     reusability and maintenece.
 
     When you want to use an specific style for a
@@ -9,9 +9,11 @@
 */
 
 import BUTTONS_STYLES from "./components/buttons";
+import HEADLINES_STYLES from "./components/headlines";
 
-const styles = {
+const stylesComponents = {
     buttons: BUTTONS_STYLES,
+    headlines: HEADLINES_STYLES
 }
 
-export default styles;
+export default stylesComponents;

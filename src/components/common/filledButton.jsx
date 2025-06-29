@@ -1,7 +1,7 @@
-import styles from "../../styles";
+import stylesComponents from "../../styles/stylesComponents";
 
 export default function FilledButton({ children }) {
     return (
-        <button href="#" className={styles.buttons.filled}>{children}</button>
+        <button href="#" className={stylesComponents.buttons.filled}>{children}</button>
     );
 }

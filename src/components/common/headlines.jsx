@@ -1,6 +1,7 @@
+import stylesComponents from "../../styles/stylesComponents";
 
-export default function HeadLine(){
+export default function HeadLine({children}){
     return (
-        <h1 className="text-2xl">xD</h1>
+        <h1 className={stylesComponents.headlines.secondaryHeaderWhite}>{ children }</h1>
     );
 }

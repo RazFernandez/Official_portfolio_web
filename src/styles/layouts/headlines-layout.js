@@ -5,8 +5,8 @@
     instead of pure css.
 */
 
-const LAYOUTS_STYLES = {
-    headers: "flex items-center",
+const HEADLINES_LAYOUT_STYLES = {
+    headers: "flex items-center justify-center my-8 lg:my-16",
 };
 
-export default LAYOUTS_STYLES;
+export default HEADLINES_LAYOUT_STYLES;

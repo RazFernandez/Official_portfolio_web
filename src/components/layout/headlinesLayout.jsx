@@ -1,7 +1,9 @@
-export function HeadlineLayout() {
+import stylesLayouts from "../../styles/stylesLayouts";
+
+export default function HeadlineLayout({ children }) {
     return (
-        <div>
-            
+        <div className={stylesLayouts.headlines.headers}>
+            {children}
         </div>
     );
 }
