@@ -6,11 +6,14 @@
 
 import SECTION_NAMES from "./content/sectionNames"
 import HERO_INFO from "./content/home";
+import FALLBACK_TEXT from "./content/fallbackText";
+
 const staticString = {
     sectionNames: SECTION_NAMES,
     sectionContent: {
         home: HERO_INFO
-    }
+    },
+    fallbackText: FALLBACK_TEXT,
 }
 
 export default staticString;

@@ -3,11 +3,11 @@ import FilledButtonIcon from "./filledButtonIcon";
 import RightArrow from "../icons/rightArrow";
 import stylesComponents from "../../styles/stylesComponents";
 import GroupOfBadges from "../layout/groupOfBadges";
+import staticString from "../../strings/strings";
 
 
-export default function ProjectCard() {
+export default function ProjectCard({title, description, listOfTechnologies: mapOfTechnologies}) {
     
-
     return (
         <div className={stylesComponents.cards.background}>
             <a href="#">
@@ -15,10 +15,10 @@ export default function ProjectCard() {
             </a>
             <div className="p-5">
                 <a href="#">
-                    <h5 className={stylesComponents.cards.title}>Noteworthy technology acquisitions 2021</h5>
+                    <h5 className={stylesComponents.cards.title}>{title || staticString.fallbackText.title }</h5>
                 </a>
-                <p className={stylesComponents.cards.description}>Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                <GroupOfBadges></GroupOfBadges>
+                <p className={stylesComponents.cards.description}>{description || staticString.fallbackText.description}</p>
+                <GroupOfBadges listOfElements={mapOfTechnologies}></GroupOfBadges>
                 <FilledButtonIcon svgIcon={RightArrow}>View Project</FilledButtonIcon>
             </div>
         </div>
