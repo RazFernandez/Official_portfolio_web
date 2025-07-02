@@ -1,4 +1,4 @@
-export function DownArrow() {
+export default function DownArrow() {
 
     return (
         <svg
