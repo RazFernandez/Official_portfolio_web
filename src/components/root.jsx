@@ -1,9 +1,13 @@
 /* 
-    This page is the root of the app, that is,
-    here the content is rendered according to a
-    specific URL path, while keeping navbar and footer
-    in the same place in all of them.
+    Root component of the application.
+
+    This component serves as the layout wrapper for all pages.
+    It includes the persistent Navbar and Footer, which remain visible
+    across different routes. The <Outlet /> renders the matched child route
+    component based on the current URL, allowing dynamic page content
+    while preserving the overall layout structure.
 */
+
 import { Outlet } from "react-router";
 import Navbar from "./layout/Navbar";
 import Footer from "./layout/Footer";

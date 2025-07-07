@@ -7,7 +7,7 @@ import { pyTech, jsTech, devOpsTech, mobileTech, stylingTech } from "../../data/
 
 export default function LastestProjectsSection(){
     return (
-        <>  
+        <section>
             <HeadlineLayout>
                 <HeadLine>{ staticString.sectionNames.home[0] }</HeadLine>
             </HeadlineLayout>
@@ -18,7 +18,6 @@ export default function LastestProjectsSection(){
                 <ProjectCard listOfTechnologies={mobileTech}></ProjectCard>
                 <ProjectCard listOfTechnologies={stylingTech}></ProjectCard>
             </Grid3x3Layout>
-            
-        </>
+        </section>  
     );
 }
