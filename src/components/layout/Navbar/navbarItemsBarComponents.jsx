@@ -11,6 +11,8 @@
     to redirect the user.
 */
 
+import { NavLink } from "react-router-dom";
+
 export function NavbarFavicon({ LogoImage, children }) {
     return (
         <>
@@ -28,7 +30,7 @@ export function NavbarFavicon({ LogoImage, children }) {
     current page) or not
 */
 
-export function NavbarItem({ children, isCurrentPage = false }) {
+export function NavbarItem({ children, isCurrentPage = false, path }) {
     
     const currentPageStyleButton = 'block py-3 px-4 text-white bg-primary-500';
     const defaultPageStyleButton = 'block py-3 px-4 text-white hover:bg-primary-500 focus:bg-secondary-500 transition duration-300 ease-in-out';
@@ -37,10 +39,10 @@ export function NavbarItem({ children, isCurrentPage = false }) {
 
     return (
         <li>
-            <a href="#"
+            <NavLink to={path}
                 className={styleOfButtonItem}>
                { children }
-            </a>
+            </NavLink>
         </li>
     );
 

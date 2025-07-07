@@ -1,5 +1,19 @@
+/* 
+  This is the main css stylesheet.
+  This project uses tailwind css v4 
+  for that reason the tailwind.conf file
+  is not needed here, just by importing the
+  package.
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import "tailwindcss";
+
+/*
+  These two css rules ensures that 
+  the margin, padding and background color
+  is the same in all of the browsers.
+*/
 
 html, body{
   margin: 0;
@@ -11,6 +25,22 @@ html, body{
       @apply bg-dark-bg-600;
   }
 }
+
+/*
+  Here it's set the fonts used for this
+  project: exo2 and lato.
+
+  Besides, the color scheme is based on 
+  Material Design 3. For more info you 
+  can see:
+  
+  public/assets/Color-Palette.png
+
+  or visit the repo to visualize the 
+  color scheme:
+
+  https://github.com/RazFernandez/Official_portfolio_web
+*/
 
 @theme {
 

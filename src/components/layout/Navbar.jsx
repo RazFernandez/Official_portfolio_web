@@ -1,15 +1,15 @@
 import { useState } from "react";
-import MyLogo from '../assets/images/VentoTech-icon.png';
-import NavbarItemBar from './navabar-components/navbar-items-bar';
-import BurgerButton from './navabar-components/navbar-burger-button';
-import { BugerButtonIcon } from './Icon-components/Icons-svg';
-import { NavbarFavicon} from './navabar-components/navbar-items-bar-components';
+import MyLogo from '../../assets/images/VentoTech-icon.png';
+import NavbarItemBar from './Navbar/navbarItemsBar';
+import BurgerButton from './Navbar/navbarBurgerButton';
+import BugerButtonIcon from "../icons/burgerButton";
+import { NavbarFavicon} from './Navbar/navbarItemsBarComponents';
 
 /* 
     This is the final navbar displayed in my portfolio web.
 */
 
-export function Navbar() {
+export default function Navbar() {
     /* 
     This state assists in hidding or displaying the navbar
     according to the screen size. When it's mobile, it only

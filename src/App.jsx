@@ -1,15 +1,32 @@
-import './App.css'
-import { Navbar } from './components/Navbar'
-import { Footer } from './components/Footer'
-import HereSection from './main-pages/Home/hero-section'
-function App() {
-  
+import './styles/index.css'
+import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
+import HeroSection from './Pages/Home/heroSection'
+import LastestProjectsSection from './Pages/Home/lastestProjectsSection'
+import Root from './root'
+import Home from './Pages/Home/Home'
+import About from './Pages/AboutMe/About'
+import Portfolio from './Pages/Portfolio/Portfolio'
+import { Route, Router, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
+import Skills from './Pages/Skills/Skills'
 
+/*
+  All routes are defined in here
+*/
+//Fix nested main tag
+const router = createBrowserRouter(createRoutesFromElements(
+  <Route path='/' element={<Root />}>
+    <Route path='/' element={<Home />}></Route>
+    <Route path='/about' element={<About />}></Route>
+    <Route path='/portfolio' element={<Portfolio />}></Route>
+    <Route path='/skills' element={<Skills />}></Route>
+  </Route>
+));
+
+function App() {
   return (
     <>
-      <Navbar></Navbar>
-      <HereSection></HereSection>
-      <Footer></Footer>
+     <RouterProvider router={router}></RouterProvider>
     </>
   )
 }
