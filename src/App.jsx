@@ -3,7 +3,7 @@ import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import HeroSection from './Pages/Home/heroSection'
 import LastestProjectsSection from './Pages/Home/lastestProjectsSection'
-import Root from './components/root'
+import Root from './root'
 import Home from './Pages/Home/Home'
 import About from './Pages/AboutMe/About'
 import Portfolio from './Pages/Portfolio/Portfolio'
@@ -16,7 +16,7 @@ import Skills from './Pages/Skills/Skills'
 //Fix nested main tag
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Root />}>
-    <Route path='/home' element={<Home />}></Route>
+    <Route path='/' element={<Home />}></Route>
     <Route path='/about' element={<About />}></Route>
     <Route path='/portfolio' element={<Portfolio />}></Route>
     <Route path='/skills' element={<Skills />}></Route>
