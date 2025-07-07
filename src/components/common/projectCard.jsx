@@ -6,7 +6,7 @@ import GroupOfBadges from "../layout/groupOfBadges";
 import staticString from "../../strings/strings";
 
 
-export default function ProjectCard({title, description, listOfTechnologies: mapOfTechnologies}) {
+export default function ProjectCard({title, description, mapOfTechnologies}) {
     
     return (
         <div className={stylesComponents.cards.background}>
