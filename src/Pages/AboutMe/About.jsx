@@ -1,9 +1,25 @@
+import { useEffect, useState } from "react";
+import { getProjectData } from "../../api/fetchProjectData";
 
 export default function About() {
+
+    const [projectData, setProjectData] = useState(null);
+    useEffect(() => {
+        async function fetchData() {
+            const data = await getProjectData();
+            setProjectData(data);
+        }
+        fetchData();
+    },[]);
+
     return (
         <>
             <p>
-                This application contains snippets from various Codecademy articles. You can browse all our articles and read them in their entirety <a href="https://www.codecademy.com/articles">here</a>.
+                This is a test for fetching data
+            </p>
+
+            <p>
+                {projectData ? JSON.stringify(projectData, null, 2) : 'Loanding project data...'}
             </p>
         </>
     );
