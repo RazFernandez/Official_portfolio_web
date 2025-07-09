@@ -7,7 +7,7 @@
     considered valid for 10 minutes. After that, fresh data is fetched and stored again.
 */
 
-const API_URL = "https://script.google.com/macros/s/AKfycbyRvD--ePablPp2Eh64jw35p1UKsVPgEKYc4EdV8G94k_ZLKKIRMjWVybubR98EJJkD/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbx7eWVj5FXyzpg_wQUYIjZ3FxcNvK5-unpdi4qYf_XbSW6i9dgtPPFXM29cjTJyVH4/exec";
 
 // LocalStorage keys for the project data and its associated timestamp
 const CACHE_KEYS = ["projects", "projects_timestamp"];
