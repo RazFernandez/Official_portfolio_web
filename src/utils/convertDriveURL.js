@@ -14,7 +14,7 @@
  * @returns {string} A direct thumbnail URL if a valid ID is found, otherwise returns the original URL.
  */
 
-export function convertURLGoogleDrive(url) {
+export default function convertURLGoogleDrive(url) {
     // Regular expression to extract the file ID from both common Google Drive URL formats
     const regex = /https:\/\/drive\.google\.com\/(?:open\?id=|file\/d\/)([a-zA-Z0-9_-]+)/;
 

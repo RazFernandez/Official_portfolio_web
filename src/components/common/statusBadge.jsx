@@ -9,8 +9,8 @@ export default function StatusBadge({ isCompleted, date }) {
     
     return (
 
-        <span className={`${isCompleted ? completedClasses : developingClasses}`}>
-            {isCompleted ? (<><CheckIcon /> {date} </>) : (<><ClockIcon/> Developing </>)}
+        <span className={`${isCompleted === "Completed" ? completedClasses : developingClasses}`}>
+            {isCompleted === "Completed" ? (<><CheckIcon /> {date} </>) : (<><ClockIcon/> Developing </>)}
         </span>
     );
 }
