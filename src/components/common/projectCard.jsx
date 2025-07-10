@@ -4,12 +4,14 @@ import RightArrow from "../icons/rightArrow";
 import stylesComponents from "../../styles/stylesComponents";
 import GroupOfBadges from "../layout/groupOfBadges";
 import staticString from "../../strings/strings";
+import StatusBadge from "./statusBadge";
 
 
 export default function ProjectCard({title, description, mapOfTechnologies}) {
     
     return (
         <div className={stylesComponents.cards.background}>
+            <StatusBadge isCompleted={false} date="July 2025"/>
             <a href="#">
                 <img className="rounded-t-lg" src={HeroLogo} alt="" />
             </a>

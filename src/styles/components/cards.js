@@ -7,7 +7,7 @@
 
 const CARDS_STYLES = {
     background:
-        "max-w-sm bg-secondary-900 border border-gray-700 rounded-lg shadow-sm",
+        "max-w-sm bg-secondary-900 border border-gray-700 rounded-lg shadow-sm relative",
     title:
         "mb-2 text-2xl font-exo2 font-medium tracking-tight text-white",
     description:

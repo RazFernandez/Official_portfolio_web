@@ -1,4 +1,4 @@
-import Badge from "../common/badge";
+import TagBadge from "../common/tagBadge";
 export default function GroupOfBadges({mapOfElements}) {
 
     // const badgesComponets = []
@@ -10,7 +10,7 @@ export default function GroupOfBadges({mapOfElements}) {
 
     return (
         <div className="flex flex-wrap gap-2 mb-6 mt-6">
-            {mapOfElements && mapOfElements.lenght > 0 ? (mapOfElements.map(element => (<Badge key={element.id} value={element.technology}></Badge>))) : (<Badge value="Sample Tag" />)}
+            {mapOfElements && mapOfElements.lenght > 0 ? (mapOfElements.map(element => (<TagBadge key={element.id} value={element.technology}></TagBadge>))) : (<TagBadge value="Sample Tag" />)}
         </div>
     );
 }
