@@ -4,6 +4,8 @@ import staticString from "../../strings/strings";
 import ProjectCard from "../../components/common/projectCard";
 import Grid3x3Layout from "../../components/layout/grid3x3Layout";
 import { DataPortfolio } from "../../data/cardData";
+import GroupOfCards from "../../components/layout/groupOfCards";
+import { finalTestData } from "../../data/cardData";
 // import { pyTech, jsTech, devOpsTech, mobileTech, stylingTech } from "../../data/cardData";
 
 // Group of card: Array of objects
@@ -16,12 +18,8 @@ export default function LastestProjectsSection(){
                 <HeadLine>{ staticString.sectionNames.home[0] }</HeadLine>
             </HeadlineLayout>
             <Grid3x3Layout>
-                <ProjectCard DataProject={DataPortfolio}/>
-                {/* <ProjectCard listOfTechnologies={pyTech}></ProjectCard>
-                <ProjectCard listOfTechnologies={jsTech}></ProjectCard>
-                <ProjectCard listOfTechnologies={devOpsTech}></ProjectCard>
-                <ProjectCard listOfTechnologies={mobileTech}></ProjectCard>
-                <ProjectCard listOfTechnologies={stylingTech}></ProjectCard> */}
+                {/* <ProjectCard DataProject={DataPortfolio}/> */}
+                <GroupOfCards ArrayOfObjects={finalTestData}/>
             </Grid3x3Layout>
         </section>  
     );

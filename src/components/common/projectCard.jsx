@@ -19,7 +19,7 @@ export default function ProjectCard({DataProject}) {
         <div className={stylesComponents.cards.background}>
             <StatusBadge isCompleted={DataProject.status} date={Date}/>
             <a href="#">
-                <img className="rounded-t-lg" src={ImageURL || HeroLogo} alt="" />
+                <img className="w-full h-60 object-cover rounded-t-lg" src={ImageURL || HeroLogo} alt="" />
             </a>
             <div className="p-5">
                 <a href="#">
