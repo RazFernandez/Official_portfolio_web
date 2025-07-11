@@ -7,6 +7,7 @@ import staticString from "../../strings/strings";
 import StatusBadge from "./statusBadge";
 import convertURLGoogleDrive from "../../utils/convertDriveURL";
 import { formatUTCToMonthYear } from "../../utils/convertUTCDate";
+import { mergeNonEmptyArrays } from "../../utils/dataOperations";
 
 
 export default function ProjectCard({DataProject}) {
@@ -26,7 +27,7 @@ export default function ProjectCard({DataProject}) {
                     <h5 className={stylesComponents.cards.title}>{DataProject.title || staticString.fallbackText.title }</h5>
                 </a>
                 <p className={stylesComponents.cards.description}>{DataProject.description || staticString.fallbackText.description}</p>
-                <GroupOfBadges listOfTechnologies={DataProject.technologies.languagesAndFrameworks}></GroupOfBadges>
+                <GroupOfBadges color="green" listOfTechnologies={mergeNonEmptyArrays(DataProject.technologies)}></GroupOfBadges>
                 <FilledButtonIcon svgIcon={RightArrow} url={DataProject.projectLink}>View Project</FilledButtonIcon>
             </div>
         </div>
