@@ -1,9 +1,7 @@
 import HeadLine from "../../components/common/headlines";
 import HeadlineLayout from "../../components/layout/headlinesLayout";
 import staticString from "../../strings/strings";
-import ProjectCard from "../../components/common/projectCard";
 import Grid3x3Layout from "../../components/layout/grid3x3Layout";
-import { DataPortfolio } from "../../data/cardData";
 import GroupOfCards from "../../components/layout/groupOfCards";
 import { finalTestData } from "../../data/cardData";
 // import { pyTech, jsTech, devOpsTech, mobileTech, stylingTech } from "../../data/cardData";
