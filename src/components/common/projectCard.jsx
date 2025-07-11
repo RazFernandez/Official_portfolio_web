@@ -26,7 +26,7 @@ export default function ProjectCard({DataProject}) {
                     <h5 className={stylesComponents.cards.title}>{DataProject.title || staticString.fallbackText.title }</h5>
                 </a>
                 <p className={stylesComponents.cards.description}>{DataProject.description || staticString.fallbackText.description}</p>
-                <GroupOfBadges listOfElements={DataProject.technologies}></GroupOfBadges>
+                <GroupOfBadges listOfTechnologies={DataProject.technologies.languagesAndFrameworks}></GroupOfBadges>
                 <FilledButtonIcon svgIcon={RightArrow} url={DataProject.projectLink}>View Project</FilledButtonIcon>
             </div>
         </div>

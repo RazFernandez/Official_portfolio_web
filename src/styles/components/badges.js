@@ -7,7 +7,13 @@
 
 const BADGES_STYLES = {
     tagBadge:
-        "bg-green-900 text-green-300 text-xs font-exo2 font-medium px-2.5 py-0.5 rounded-sm",
+        {
+        green: "bg-green-900 text-green-300 text-xs font-exo2 font-medium px-2.5 py-0.5 rounded-sm",
+        blue: "bg-secondary-700 text-white text-xs font-exo2 font-medium px-2.5 py-0.5 rounded-sm",
+        yellow: "bg-yellow-900 text-white text-xs font-exo2 font-medium px-2.5 py-0.5 rounded-sm",
+        red: "bg-red-900 text-white text-xs font-exo2 font-medium px-2.5 py-0.5 rounded-sm",
+        grey: "bg-gray-800 text-white text-xs font-exo2 font-medium px-2.5 py-0.5 rounded-sm",
+        },
     statusBadgeCompleted:
         "absolute top-2 left-2 z-10 bg-primary-500 text-white text-sm font-bold inline-flex items-center gap-x-1 px-2 py-0.5 rounded-sm border border-gray-500",
     statusBadgeDeveloping:

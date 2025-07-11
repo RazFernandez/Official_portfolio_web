@@ -7,7 +7,7 @@ export default function GroupOfCards({ ArrayOfObjects }) {
 
     const projectComponents = []
     for (const project of ArrayOfObjects) {
-        projectComponents.push(<ProjectCard DataProject={project}/>)
+        projectComponents.push(<ProjectCard key={project.title} DataProject={project}/>)
     }
 
     return (
