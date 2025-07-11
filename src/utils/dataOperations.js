@@ -25,3 +25,21 @@ export function sortProjectByDate(data, order = "ASC") {
         .sort((a, b) => isDescending ? b.key - a.key : a.key - b.key)
         .map(item => item.project);
 }
+
+export function filterProjectsByType(projects, type) {
+
+    const validTypes = [
+        "Professional Experience",
+        "Personal Project",
+        "Experimental Project"
+    ];
+    
+    if (!validTypes.includes(type)) {
+        console.warn(`Invalid project type: "${type}". Expected one of: ${validTypes.join(", ")}`);
+        return [];
+      }
+
+    return projects.filter(project =>
+        project.typeOfProject.toLowerCase() === type.toLowerCase()
+    );
+  }
