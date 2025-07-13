@@ -8,7 +8,7 @@ import ProjectCardSkeleton from "../../components/common/projectCardSkeleton";
 export default function ExperimentalProjects({ data, isLoading = false }) {
 
     return (
-        <section>
+        <section className="bg-dark-bg-600">
             <HeadlineLayout>
                 <HeadLine>{staticString.sectionNames.portfolio[2]}</HeadLine>
             </HeadlineLayout>

@@ -6,7 +6,7 @@
 */
 
 const HEADLINES_LAYOUT_STYLES = {
-    headers: "flex items-center justify-center my-8 lg:my-16",
+    headers: "flex items-center justify-center py-8 lg:py-16",
 };
 
 export default HEADLINES_LAYOUT_STYLES;
