@@ -33,3 +33,4 @@ export default function ProjectCard({DataProject}) {
         </div>
     );
 }
+
