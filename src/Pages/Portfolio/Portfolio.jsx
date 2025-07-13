@@ -18,7 +18,6 @@ export default function Portfolio() {
     }, []);
 
     if (!projectData) {
-        // You can also create a single skeleton component if you want
         return (
             <>
                 <ProfessionalProjects isLoading />
