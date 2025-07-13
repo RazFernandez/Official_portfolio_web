@@ -28,3 +28,6 @@ dist-ssr
 
 # Test react components folder
 src/test-components
+
+# Data for testing purposes
+src/data

@@ -6,8 +6,8 @@
 */
 
 const HEADLINES_STYLES = {
-    secondaryHeaderWhite: "font-exo2 font-light text-white md:text-xl lg:text-3xl",
-    secondaryHeaderGreen: "font-exo2 font-light text-primary-500 md:text-xl lg:text-3xl"
+    secondaryHeaderWhite: "font-exo2 font-light text-white text-2xl lg:text-3xl",
+    secondaryHeaderGreen: "font-exo2 font-light text-primary-500 text-2xl lg:text-3xl"
 };
 
 export default HEADLINES_STYLES;

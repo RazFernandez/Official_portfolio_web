@@ -7,7 +7,7 @@
 const SECTION_NAMES = {
     home: ["Lastest Projects", "Tech Toolbox"],
     aboutMe: ["Personal Principles", "Badges and Certifications", "Beyond Programming"],
-    portfolio: ["Professional Experience", "Personal Projects"],
+    portfolio: ["Professional Experience", "Personal Projects", "Experimental Projects"],
     skills: ["Programming Languages"]
 }
 

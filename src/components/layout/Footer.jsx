@@ -7,7 +7,7 @@
 
 import { GithubIcon, LinkedInIcon, MediumIcon } from "../icons/Icons-svg";
 
-export function Footer() {
+export default function Footer() {
 
     const styleFooterSections = "hover:underline hover:text-primary-500 transition duration-300 ease-in-out";
     return (

@@ -9,7 +9,7 @@ import { NavbarFavicon} from './Navbar/navbarItemsBarComponents';
     This is the final navbar displayed in my portfolio web.
 */
 
-export function Navbar() {
+export default function Navbar() {
     /* 
     This state assists in hidding or displaying the navbar
     according to the screen size. When it's mobile, it only
