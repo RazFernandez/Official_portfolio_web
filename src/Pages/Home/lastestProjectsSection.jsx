@@ -20,8 +20,11 @@ export default function LastestProjectsSection({ data, isLoading = false }){
                     : <GroupOfCards ArrayOfObjects={data} />
                 }
             </Grid3x3Layout>
-            <FilledButton url="/portfolio">View all projects</FilledButton>
-            <FilledButton url="https://github.com/RazFernandez/Official_portfolio_web/tree/development" external>View Github</FilledButton>
+            {!isLoading && (
+                <div className="flex justify-center mt-8">
+                    <FilledButton url="/portfolio">View all projects</FilledButton>
+                </div>
+            )}
         </section>  
     );
 }

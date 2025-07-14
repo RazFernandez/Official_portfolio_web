@@ -25,13 +25,13 @@ export default function NavbarItemBar({ isOpen }) {
                         <NavbarSubItem>Medium</NavbarSubItem>
                     </NavbarMenuItems>
                 </NavBarItemDropdown>
-                <NavBarItemIcon>
+                <NavBarItemIcon url={"https://github.com/RazFernandez"}>
                     <GithubIcon></GithubIcon>
                 </NavBarItemIcon>
-                <NavBarItemIcon>
+                <NavBarItemIcon url={"https://www.linkedin.com/in/mrfernández/"}>
                     <LinkedInIcon></LinkedInIcon>
                 </NavBarItemIcon>
-                <NavBarItemIcon>
+                <NavBarItemIcon url={"https://medium.com/@RazielFernandez"}>
                     <MediumIcon></MediumIcon>
                 </NavBarItemIcon>
                 

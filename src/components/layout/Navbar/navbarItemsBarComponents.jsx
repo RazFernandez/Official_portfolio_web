@@ -13,13 +13,13 @@
 
 import { NavLink } from "react-router-dom";
 
-export function NavbarFavicon({ LogoImage, children }) {
+export function NavbarFavicon({ LogoImage, children, url }) {
     return (
         <>
-            <a className="flex items-center space-x-3 rtl:space-x-reverse pb-0 md:pb-4 xl:pb-0">
+            <NavLink to={url} className="flex items-center space-x-3 rtl:space-x-reverse pb-0 md:pb-4 xl:pb-0">
                 <img src={LogoImage} className="h-8" alt="Portfolio Logo" />
                 <span className="self-center text-2xl font-exo2 whitespace-nowrap text-white">{children}</span>
-            </a>
+            </NavLink>
         </>
     );
 }
