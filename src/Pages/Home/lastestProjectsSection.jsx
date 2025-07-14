@@ -4,7 +4,7 @@ import staticString from "../../strings/strings";
 import Grid3x3Layout from "../../components/layout/grid3x3Layout";
 import GroupOfCards from "../../components/layout/groupOfCards";
 import ProjectCardSkeleton from "../../components/common/projectCardSkeleton";
-
+import FilledButton from "../../components/common/filledButton";
 
 export default function LastestProjectsSection({ data, isLoading = false }){
     return (
@@ -20,6 +20,8 @@ export default function LastestProjectsSection({ data, isLoading = false }){
                     : <GroupOfCards ArrayOfObjects={data} />
                 }
             </Grid3x3Layout>
+            <FilledButton url="/portfolio">View all projects</FilledButton>
+            <FilledButton url="https://github.com/RazFernandez/Official_portfolio_web/tree/development" external>View Github</FilledButton>
         </section>  
     );
 }

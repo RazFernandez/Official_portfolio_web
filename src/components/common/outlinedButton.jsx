@@ -1,7 +1,7 @@
 import stylesComponents from "../../styles/stylesComponents";
 
-export default function OutlinedButton({ children }) {
+export default function OutlinedButton({ children, url = "#" }) {
     return (
-        <button href="#" className={stylesComponents.buttons.outlined}>{children}</button>
+        <a href={url} className={stylesComponents.buttons.outlined}>{children}</a>
     );
 }
