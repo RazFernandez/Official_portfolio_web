@@ -1,5 +1,6 @@
 import HeroSection from "./heroSection";
 import LastestProjectsSection from "./lastestProjectsSection";
+import TechToolBoxSection from "./techToolBoxSection";
 import { useState, useEffect } from "react";
 import { getProjectData } from "../../api/fetchProjectData";
 import { sortProjectByDate, filterProjectsByType } from "../../utils/dataOperations";
@@ -25,7 +26,8 @@ export default function Home() {
         return (
             <>
                 <HeroSection></HeroSection>
-                <LastestProjectsSection isLoading/>
+                <LastestProjectsSection isLoading />
+                <TechToolBoxSection></TechToolBoxSection>
             </>
         );
     }
@@ -39,6 +41,7 @@ export default function Home() {
         <>
             <HeroSection></HeroSection>
             <LastestProjectsSection data={professionalProjects.slice(0, 3)}></LastestProjectsSection>
+            <TechToolBoxSection></TechToolBoxSection>
         </>
     );
 }

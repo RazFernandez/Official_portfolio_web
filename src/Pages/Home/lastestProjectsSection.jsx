@@ -8,7 +8,7 @@ import FilledButton from "../../components/common/filledButton";
 
 export default function LastestProjectsSection({ data, isLoading = false }){
     return (
-        <section>
+        <section className="bg-dark-bg-800">
             <HeadlineLayout>
                 <HeadLine>{ staticString.sectionNames.home[0] }</HeadLine>
             </HeadlineLayout>
@@ -21,7 +21,7 @@ export default function LastestProjectsSection({ data, isLoading = false }){
                 }
             </Grid3x3Layout>
             {!isLoading && (
-                <div className="flex justify-center mt-8">
+                <div className="flex justify-center mt-8 pb-16">
                     <FilledButton url="/portfolio">View all projects</FilledButton>
                 </div>
             )}
