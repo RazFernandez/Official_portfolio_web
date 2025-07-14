@@ -1,8 +1,16 @@
-export default function DownArrow() {
+export default function ArrowIcon({ direction = "DOWN" }) {
+    const rotationClasses = {
+        UP: "rotate-180",
+        RIGHT: "rotate-90",
+        LEFT: "rotate-270",
+        DOWN: "rotate-0",
+    };
+
+    const directionStyle = rotationClasses[direction] || "rotate-0";
 
     return (
         <svg
-            className="w-2.5 h-2.5 ms-2.5"
+            className={`w-2.5 h-2.5 ms-2.5 ${directionStyle}`}
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -10,9 +18,9 @@ export default function DownArrow() {
         >
             <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="m1 1 4 4 4-4"
             />
         </svg>
