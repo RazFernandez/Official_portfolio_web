@@ -11,10 +11,12 @@
 import { Outlet } from "react-router";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
+import ScrollToTop from './components/scrollToTop'
 
 export default function Root() {
     return (
         <>
+            <ScrollToTop/>
             <Navbar></Navbar>
             <main>
                 <Outlet></Outlet>
