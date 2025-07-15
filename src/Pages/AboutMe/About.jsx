@@ -6,6 +6,8 @@ import BiographySection from "./biographySection";
 export default function About() {
 
     return (
-        <BiographySection/>
+        <section>
+            <BiographySection />
+        </section>
     );
   }

@@ -2,11 +2,12 @@ import HeroLogo from "../../assets/images/LogoPortfolioWeb.png"
 import FilledButton from "../../components/common/filledButton";
 import OutlinedButton from "../../components/common/outlinedButton";
 import staticString from "../../strings/strings";
+import SectionButton from "../../components/common/sectionButton";
 
 export default function HeroSection() {
 
     return (
-        <section className="bg-dark-bg-700">
+        <section id="hero-section" className="bg-dark-bg-700">
             <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                 <div className="mr-auto place-self-center lg:col-span-7">
                     <h2 className="max-w-2xl mb-6 font-exo2 font-light text-white lg:mb-8 md:text-xl lg:text-3xl">{staticString.sectionContent.home.greetings }</h2>
@@ -19,6 +20,7 @@ export default function HeroSection() {
                     <img src={HeroLogo} width={500} alt="Laptop Logo" />
                 </div>
             </div>
+            <SectionButton sectionID="lastest-projects-section"/>
         </section>
     );
 }

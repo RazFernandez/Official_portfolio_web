@@ -8,7 +8,7 @@ import { TechToolBox } from "../../data/techToolBoxData";
 export default function TechToolBoxSection() {
 
     return (
-        <section className="bg-dark-bg-600">
+        <section id="tech-toolbox-section" className="bg-dark-bg-600">
             <HeadlineLayout>
                 <HeadLine>{staticString.sectionNames.home[1]}</HeadLine>
             </HeadlineLayout>
