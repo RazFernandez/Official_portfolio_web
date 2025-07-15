@@ -1,5 +1,5 @@
 import ArrowIcon from "../icons/arrowIcon";
-import stylesComponents from "../../styles/stylesComponents";
+import ArrowButton from "./arrowButton";
 
 export default function SectionButton({ sectionID }) {
     
@@ -10,9 +10,7 @@ export default function SectionButton({ sectionID }) {
 
     return (
         <div className="flex justify-center items-center lg:mt-[-4em] pb-6">
-            <button className={stylesComponents.buttons.sectionIcon} onClick={goToSection}>
-                <ArrowIcon />
-            </button>
+            <ArrowButton OnclickFunction={goToSection}/>
         </div >
     );
 }
