@@ -10,7 +10,7 @@ export default function ArrowIcon({ direction = "DOWN" }) {
 
     return (
         <svg
-            className={`w-2.5 h-2.5 ms-2.5 ${directionStyle}`}
+            className={`w-5 h-5 ${directionStyle}`}
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

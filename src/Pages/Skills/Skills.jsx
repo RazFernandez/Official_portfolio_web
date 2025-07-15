@@ -1,5 +1,6 @@
 import ProjectCardSkeleton from "../../components/common/projectCardSkeleton";
-import ArrowIcon from "../../components/icons/downArrow";
+import ArrowIcon from "../../components/icons/arrowIcon";
+import SectionButton from "../../components/common/sectionButton";
 
 export default function Skills() {
     return (
@@ -9,7 +10,8 @@ export default function Skills() {
             </p>
             <ArrowIcon direction="LEFT"></ArrowIcon>
             <ArrowIcon direction="RIGHT"></ArrowIcon>
-            <ProjectCardSkeleton/>
+            <ProjectCardSkeleton />
+            <SectionButton></SectionButton>
         </>
     );
   }
