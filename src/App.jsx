@@ -1,13 +1,9 @@
 import './styles/index.css'
-import Navbar from './components/layout/Navbar'
-import Footer from './components/layout/Footer'
-import HeroSection from './Pages/Home/heroSection'
-import LastestProjectsSection from './Pages/Home/lastestProjectsSection'
 import Root from './root'
 import Home from './Pages/Home/Home'
 import About from './Pages/AboutMe/About'
 import Portfolio from './Pages/Portfolio/Portfolio'
-import { Route, Router, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Skills from './Pages/Skills/Skills'
 
 /*
@@ -26,7 +22,8 @@ const router = createBrowserRouter(createRoutesFromElements(
 function App() {
   return (
     <>
-     <RouterProvider router={router}></RouterProvider>
+      <RouterProvider router={router}>
+     </RouterProvider>
     </>
   )
 }

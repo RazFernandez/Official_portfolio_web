@@ -5,6 +5,7 @@
     section 
 */
 
+import { NavLink } from "react-router-dom";
 import { GithubIcon, LinkedInIcon, MediumIcon } from "../icons/Icons-svg";
 
 export default function Footer() {
@@ -17,36 +18,36 @@ export default function Footer() {
                     <div className="">
                         <ul className="flex flex-wrap items-center gap-x-4 md:gap-x-6">
                             <li>
-                                <a href="#" className={styleFooterSections}>HOME</a>
+                                <NavLink to={"/"} className={styleFooterSections}>HOME</NavLink>
                             </li>
                             <li className="text-white hidden md:inline">|</li>
                             <li>
-                                <a href="#" className={styleFooterSections}>ABOUT ME</a>
+                                <NavLink to={"/about"} className={styleFooterSections}>ABOUT ME</NavLink>
                             </li>
                             <li className="text-white hidden md:inline">|</li>
                             <li>
-                                <a href="#" className={styleFooterSections}>PORTFOLIO</a>
+                                <NavLink to={"/portfolio"} className={styleFooterSections}>PORTFOLIO</NavLink>
                             </li>
                             <li className="text-white hidden md:inline">|</li>
                             <li>
-                                <a href="#" className={styleFooterSections}>SKILLS</a>
+                                <NavLink to={"/skills"} className={styleFooterSections}>SKILLS</NavLink>
                             </li>
                         </ul>
                     </div>
                     <div>
                         <ul className="flex flex-wrap items-center gap-x-4 md:gap-x-8">
                             <li>
-                                <a href="#">
+                                <a href="https://github.com/RazFernandez" target="_blank">
                                     <GithubIcon isHover={true}></GithubIcon>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.linkedin.com/in/mrfernández/" target="_blank">
                                     <LinkedInIcon isHover={true}></LinkedInIcon>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://medium.com/@RazielFernandez" target="_blank">
                                     <MediumIcon isHover={true}></MediumIcon>
                                 </a>
                             </li>
