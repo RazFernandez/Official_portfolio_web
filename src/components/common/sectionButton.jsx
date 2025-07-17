@@ -1,16 +1,16 @@
-import ArrowIcon from "../icons/arrowIcon";
+
 import ArrowButton from "./arrowButton";
 
-export default function SectionButton({ sectionID }) {
-    
+export default function SectionButton({ sectionID, marginTopClass = "lg:mt-[-4em]" }) {
+
     function goToSection() {
         const section = document.getElementById(sectionID);
         section.scrollIntoView({ behavior: 'smooth' });
     }
 
     return (
-        <div className="flex justify-center items-center lg:mt-[-4em] pb-6">
-            <ArrowButton OnclickFunction={goToSection}/>
-        </div >
+        <div className={`flex justify-center items-center pb-6 ${marginTopClass}`}>
+            <ArrowButton OnclickFunction={goToSection} />
+        </div>
     );
 }
