@@ -30,17 +30,17 @@ export function NavbarFavicon({ LogoImage, children, url }) {
     current page) or not
 */
 
-export function NavbarItem({ children, isCurrentPage = false, path }) {
+export function NavbarItem({ children, isCurrentPage = false, path, onClickEvent }) {
     
     const currentPageStyleButton = 'block py-3 px-4 text-white bg-primary-500';
-    const defaultPageStyleButton = 'block py-3 px-4 text-white hover:bg-primary-500 focus:bg-secondary-500 transition duration-300 ease-in-out';
+    const defaultPageStyleButton = 'block py-3 px-4 text-white hover:bg-primary-500 transition duration-300 ease-in-out';
     
     const styleOfButtonItem = isCurrentPage ? currentPageStyleButton : defaultPageStyleButton
 
     return (
         <li>
             <NavLink to={path}
-                className={styleOfButtonItem}>
+                className={styleOfButtonItem} onClick={onClickEvent}>
                { children }
             </NavLink>
         </li>
