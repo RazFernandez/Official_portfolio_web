@@ -4,7 +4,7 @@ export default function ProjectCardSkeleton() {
     return (
         <div
             role="status"
-            className="max-w-sm p-4 border border-gray-700 rounded-sm shadow-sm animate-pulse md:p-6"
+            className="max-w-sm p-4 border border-gray-700 rounded-sm shadow-sm animate-pulse md:p-6 lg:mb-16"
         >
             <div className="flex items-center justify-center h-48 mb-4 bg-gray-700 rounded-sm">
                 <DocumentIcon />
