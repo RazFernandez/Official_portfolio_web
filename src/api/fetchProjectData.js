@@ -17,17 +17,17 @@ const CACHE_DURATION = 1000 * 60 * 10;
 
 // Main function to retrieve project data (from cache or API)
 export async function getProjectData() {
-    const cacheData = localStorage.getItem(CACHE_KEYS[0]);
-    const cachedTimeStamp = localStorage.getItem(CACHE_KEYS[1]);
+    const cacheData = sessionStorage.getItem(CACHE_KEYS[0]);
+    const cachedTimeStamp = sessionStorage.getItem(CACHE_KEYS[1]);
     const nowTimeStamp = Date.now();
-    
+
     // If data exists and it's still considered fresh, return it directly
     if (cacheData && cachedTimeStamp && nowTimeStamp - cachedTimeStamp < CACHE_DURATION) {
 
-        // Parsing is necessary because localStorage stores strings, not objects
-        return JSON.parse(localStorage.getItem(CACHE_KEYS[0]));
+        // Parsing is necessary because sessionStorage stores strings, not objects
+        return JSON.parse(sessionStorage.getItem(CACHE_KEYS[0]));
     }
-    
+
     try {
         const response = await fetch(API_URL);
 
@@ -38,13 +38,13 @@ export async function getProjectData() {
         const data = await response.json();
 
         // Store the fresh data and the current timestamp for future cache validation
-        localStorage.setItem("projects", JSON.stringify(data));
-        localStorage.setItem("projects_timestamp", nowTimeStamp.toString());
+        sessionStorage.setItem("projects", JSON.stringify(data));
+        sessionStorage.setItem("projects_timestamp", nowTimeStamp.toString());
 
         return data;
     } catch (error) {
         console.error('Error fetching data:', error);
-        
+
         // If API call fails, fallback to cached data if available
         return cacheData ? JSON.parse(cacheData) : null;
     }
