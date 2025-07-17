@@ -19,11 +19,11 @@ export default function ProjectCard({DataProject}) {
     return (
         <div className={stylesComponents.cards.background}>
             <StatusBadge isCompleted={DataProject.status} date={Date}/>
-            <a href="#">
+            <a href={DataProject.projectLink} target="_blank">
                 <img className="w-full h-60 object-cover rounded-t-lg" src={ImageURL || HeroLogo} alt="" />
             </a>
             <div className="p-5">
-                <a href="#">
+                <a href={DataProject.projectLink} target="_blank">
                     <h5 className={stylesComponents.cards.title}>{DataProject.title || staticString.fallbackText.title }</h5>
                 </a>
                 <p className={stylesComponents.cards.description}>{DataProject.description || staticString.fallbackText.description}</p>
