@@ -14,8 +14,8 @@ export default function TechToolBoxSection() {
             </HeadlineLayout>
 
             <Grid4x3Layout>
-                {TechToolBox.map(tech => {
-                    return (<TechLogoButton logoUrl={tech.iconUrl} href={tech.siteUrl} alt={tech.name} />);
+                {TechToolBox.map((tech) => {
+                    return (<TechLogoButton key={tech.name} logoUrl={tech.iconUrl} href={tech.siteUrl} alt={tech.name} />);
                 })}
                
             </Grid4x3Layout>
