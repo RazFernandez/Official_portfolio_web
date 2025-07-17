@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
     those with only icons
 */
 
-export default function NavbarItemBar({ isOpen }) {
+export default function NavbarItemBar({ isOpen, onClickEvent }) {
 
     /* 
     This structure is used to indicate the active 
@@ -34,21 +34,26 @@ export default function NavbarItemBar({ isOpen }) {
             isActive = [true, false, false, false]
     }
     
-    // It handles the
+    // This function handles if the submenu in Social Media item
+    // is open according to its current state
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    function openSubMenu() {
+        setIsMenuOpen(!isMenuOpen)
+    }
+    
 
     return (
         <div className={`w-full ${isOpen ? "block" : "hidden"} md:block md:w-auto`}>
-            <ul className="font-exo2 flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-dark-bg-700 md:bg-dark-bg-900 dark:border-gray-700">
-                <NavbarItem isCurrentPage={isActive[0]} path={"/"}>HOME</NavbarItem>
-                <NavbarItem isCurrentPage={isActive[1]} path={"/about"} >ABOUT ME</NavbarItem>
-                <NavbarItem isCurrentPage={isActive[2]} path={"/portfolio"}>PORTFOLIO</NavbarItem>
-                <NavbarItem isCurrentPage={isActive[3]} path={"/skills"}>SKILLS</NavbarItem>
-                <NavBarItemDropdown dropdownName={"SOCIAL MEDIA"} onClickEvent={() => setIsMenuOpen(!isMenuOpen)}>
+            <ul className="font-exo2 flex flex-col p-4 md:zp-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-dark-bg-700 md:bg-dark-bg-900 dark:border-gray-700">
+                <NavbarItem isCurrentPage={isActive[0]} onClickEvent={onClickEvent} path={"/"}>HOME</NavbarItem>
+                <NavbarItem isCurrentPage={isActive[1]} onClickEvent={onClickEvent} path={"/about"} >ABOUT ME</NavbarItem>
+                <NavbarItem isCurrentPage={isActive[2]} onClickEvent={onClickEvent} path={"/portfolio"}>PORTFOLIO</NavbarItem>
+                <NavbarItem isCurrentPage={isActive[3]} onClickEvent={onClickEvent} path={"/skills"}>SKILLS</NavbarItem>
+                <NavBarItemDropdown dropdownName={"SOCIAL MEDIA"} onClickEvent={openSubMenu}>
                     <NavbarMenuItems isOpen={isMenuOpen}>
-                        <NavbarSubItem>LinkedIn</NavbarSubItem>
-                        <NavbarSubItem>GitHub</NavbarSubItem>
-                        <NavbarSubItem>Medium</NavbarSubItem>
+                        <NavbarSubItem onClickEvent={openSubMenu}>LinkedIn</NavbarSubItem>
+                        <NavbarSubItem onClickEvent={openSubMenu}>GitHub</NavbarSubItem>
+                        <NavbarSubItem onClickEvent={openSubMenu}>Medium</NavbarSubItem>
                     </NavbarMenuItems>
                 </NavBarItemDropdown>
                 <NavBarItemIcon url={"https://github.com/RazFernandez"}>

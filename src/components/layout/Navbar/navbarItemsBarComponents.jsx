@@ -107,7 +107,7 @@ export function NavBarItemDropdown({children, dropdownName, onClickEvent}) {
 
 export function NavbarMenuItems({ children, isOpen}) {
     
-    const defaultMenustyle = `z-10 ${isOpen ? "bloc" : "hidden"} font-normal bg-secondary-800 divide-y divide-gray-600 rounded-lg shadow-sm w-44`
+    const defaultMenustyle = `md:hidden z-10 ${isOpen ? "bloc" : "hidden"} font-normal bg-secondary-800 divide-y divide-gray-600 rounded-lg shadow-sm w-44`
 
     return (
         <div className={defaultMenustyle}>
@@ -123,13 +123,13 @@ export function NavbarMenuItems({ children, isOpen}) {
     inside a NavbarMenuItems or another layout
 */
 
-export function NavbarSubItem({ children, href}) {
+export function NavbarSubItem({ children, href, onClickEvent }) {
     
     const defaultSubItemStyleButton = "md:hidden flex items-center justify-between w-full py-3 px-4 text-white hover:bg-primary-500 focus:bg-secondary-500 transition duration-300 ease-in-out md:w-auto"
 
     return (
         <li>
-            <a href={href} target="_blank"
+            <a href={href} target="_blank" onClick={onClickEvent}
                 className={defaultSubItemStyleButton}>{children}</a>
         </li>
     );
