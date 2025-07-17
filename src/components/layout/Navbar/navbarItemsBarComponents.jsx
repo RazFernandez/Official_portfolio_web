@@ -59,7 +59,7 @@ export function NavBarItemIcon({ children, url, ImageIcon = "", ImageDescription
     if (ImageIcon === "") {
         return (
             <li>
-                <a href={url} target="_blank" className="hidden md:block py-3 px-4 text-white md:cursor-pointer md:hover:bg-primary-500 md:focus:bg-secondary-500 transition duration-300 ease-in-out">
+                <a href={url} target="_blank" className="hidden md:block py-3 px-4 text-white md:cursor-pointer md:hover:bg-primary-500 transition duration-300 ease-in-out">
                     {children}
                 </a>
             </li>
@@ -67,7 +67,7 @@ export function NavBarItemIcon({ children, url, ImageIcon = "", ImageDescription
     } else {
         return (
             <li>
-                <a href={url} target="_blank" class="hidden md:block py-3 px-4 text-white md:cursor-pointer md:hover:bg-primary-500 md:focus:bg-secondary-500 transition duration-300 ease-in-out">
+                <a href={url} target="_blank" class="hidden md:block py-3 px-4 text-white md:cursor-pointer md:hover:bg-primary-500  transition duration-300 ease-in-out">
                     <img src={ ImageIcon } alt={ ImageDescription} />
                 </a>
             </li>
@@ -83,7 +83,7 @@ export function NavBarItemIcon({ children, url, ImageIcon = "", ImageDescription
 */
 
 export function NavBarItemDropdown({children, dropdownName, onClickEvent}) {
-    const defaultPageStyleButton = "md:hidden flex items-center justify-between w-full py-3 px-4 text-white hover:bg-primary-500 focus:bg-secondary-500 transition duration-300 ease-in-out md:w-auto"
+    const defaultPageStyleButton = "md:hidden flex items-center justify-between w-full py-3 px-4 text-white hover:bg-primary-500 transition duration-300 ease-in-out md:w-auto"
     
 
     return (
@@ -125,7 +125,7 @@ export function NavbarMenuItems({ children, isOpen}) {
 
 export function NavbarSubItem({ children, href, onClickEvent }) {
     
-    const defaultSubItemStyleButton = "md:hidden flex items-center justify-between w-full py-3 px-4 text-white hover:bg-primary-500 focus:bg-secondary-500 transition duration-300 ease-in-out md:w-auto"
+    const defaultSubItemStyleButton = "md:hidden flex items-center justify-between w-full py-3 px-4 text-white hover:bg-primary-500 transition duration-300 ease-in-out md:w-auto"
 
     return (
         <li>
