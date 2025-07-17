@@ -26,7 +26,7 @@ export default function Navbar() {
                 <BurgerButton onClickEvent={()=> setIsMenuOpen(!isMenuOpen)}>
                     <BugerButtonIcon/>
                 </BurgerButton>
-                <NavbarItemBar isOpen={isMenuOpen}></NavbarItemBar>
+                <NavbarItemBar isOpen={isMenuOpen} onClickEvent={() => setIsMenuOpen(!isMenuOpen)}></NavbarItemBar>
             </div>
         </nav>
     );

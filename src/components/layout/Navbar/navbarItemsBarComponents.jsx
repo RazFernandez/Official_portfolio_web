@@ -30,17 +30,17 @@ export function NavbarFavicon({ LogoImage, children, url }) {
     current page) or not
 */
 
-export function NavbarItem({ children, isCurrentPage = false, path }) {
+export function NavbarItem({ children, isCurrentPage = false, path, onClickEvent }) {
     
     const currentPageStyleButton = 'block py-3 px-4 text-white bg-primary-500';
-    const defaultPageStyleButton = 'block py-3 px-4 text-white hover:bg-primary-500 focus:bg-secondary-500 transition duration-300 ease-in-out';
+    const defaultPageStyleButton = 'block py-3 px-4 text-white hover:bg-primary-500 transition duration-300 ease-in-out';
     
     const styleOfButtonItem = isCurrentPage ? currentPageStyleButton : defaultPageStyleButton
 
     return (
         <li>
             <NavLink to={path}
-                className={styleOfButtonItem}>
+                className={styleOfButtonItem} onClick={onClickEvent}>
                { children }
             </NavLink>
         </li>
@@ -59,7 +59,7 @@ export function NavBarItemIcon({ children, url, ImageIcon = "", ImageDescription
     if (ImageIcon === "") {
         return (
             <li>
-                <a href={url} target="_blank" className="hidden md:block py-3 px-4 text-white md:cursor-pointer md:hover:bg-primary-500 md:focus:bg-secondary-500 transition duration-300 ease-in-out">
+                <a href={url} target="_blank" className="hidden md:block py-3 px-4 text-white md:cursor-pointer md:hover:bg-primary-500 transition duration-300 ease-in-out">
                     {children}
                 </a>
             </li>
@@ -67,7 +67,7 @@ export function NavBarItemIcon({ children, url, ImageIcon = "", ImageDescription
     } else {
         return (
             <li>
-                <a href={url} target="_blank" class="hidden md:block py-3 px-4 text-white md:cursor-pointer md:hover:bg-primary-500 md:focus:bg-secondary-500 transition duration-300 ease-in-out">
+                <a href={url} target="_blank" class="hidden md:block py-3 px-4 text-white md:cursor-pointer md:hover:bg-primary-500  transition duration-300 ease-in-out">
                     <img src={ ImageIcon } alt={ ImageDescription} />
                 </a>
             </li>
@@ -83,7 +83,7 @@ export function NavBarItemIcon({ children, url, ImageIcon = "", ImageDescription
 */
 
 export function NavBarItemDropdown({children, dropdownName, onClickEvent}) {
-    const defaultPageStyleButton = "md:hidden flex items-center justify-between w-full py-3 px-4 text-white hover:bg-primary-500 focus:bg-secondary-500 transition duration-300 ease-in-out md:w-auto"
+    const defaultPageStyleButton = "md:hidden flex items-center justify-between w-full py-3 px-4 text-white hover:bg-primary-500 transition duration-300 ease-in-out md:w-auto"
     
 
     return (
@@ -107,7 +107,7 @@ export function NavBarItemDropdown({children, dropdownName, onClickEvent}) {
 
 export function NavbarMenuItems({ children, isOpen}) {
     
-    const defaultMenustyle = `z-10 ${isOpen ? "bloc" : "hidden"} font-normal bg-secondary-800 divide-y divide-gray-600 rounded-lg shadow-sm w-44`
+    const defaultMenustyle = `md:hidden z-10 ${isOpen ? "bloc" : "hidden"} font-normal bg-secondary-800 divide-y divide-gray-600 rounded-lg shadow-sm w-44`
 
     return (
         <div className={defaultMenustyle}>
@@ -123,13 +123,13 @@ export function NavbarMenuItems({ children, isOpen}) {
     inside a NavbarMenuItems or another layout
 */
 
-export function NavbarSubItem({ children, href}) {
+export function NavbarSubItem({ children, href, onClickEvent }) {
     
-    const defaultSubItemStyleButton = "md:hidden flex items-center justify-between w-full py-3 px-4 text-white hover:bg-primary-500 focus:bg-secondary-500 transition duration-300 ease-in-out md:w-auto"
+    const defaultSubItemStyleButton = "md:hidden flex items-center justify-between w-full py-3 px-4 text-white hover:bg-primary-500 transition duration-300 ease-in-out md:w-auto"
 
     return (
         <li>
-            <a href={href} target="_blank"
+            <a href={href} target="_blank" onClick={onClickEvent}
                 className={defaultSubItemStyleButton}>{children}</a>
         </li>
     );
