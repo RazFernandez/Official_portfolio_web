@@ -1,9 +1,12 @@
+import AwardsSection from "./awardsSection";
+import TechToolBoxSection from "../Home/techToolBoxSection";
+
+
 export default function Skills() {
     return (
         <>
-            <p>
-                Welcome to your projects xDDDD
-            </p>
+            <AwardsSection />
+            <TechToolBoxSection/>
         </>
     );
   }

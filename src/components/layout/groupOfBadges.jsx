@@ -1,16 +1,16 @@
-import Badge from "../common/badge";
-export default function GroupOfBadges({mapOfElements}) {
+import TagBadge from "../common/tagBadge";
+export default function GroupOfBadges({listOfTechnologies, color}) {
 
-    // const badgesComponets = []
-    // for (const tech of jsTech) {
-    //     badgesComponets.push(<Badge key={tech.id} value={tech.technology}></Badge>);
-    // }
+    const badgesComponets = []
+    for (const tech of listOfTechnologies) {
+        badgesComponets.push(<TagBadge key={tech} value={tech} color={color}></TagBadge>);
+    }
 
     // Make List of elements a Map data structure instead
 
     return (
         <div className="flex flex-wrap gap-2 mb-6 mt-6">
-            {mapOfElements && mapOfElements.lenght > 0 ? (mapOfElements.map(element => (<Badge key={element.id} value={element.technology}></Badge>))) : (<Badge value="Sample Tag" />)}
+            {badgesComponets}
         </div>
     );
 }

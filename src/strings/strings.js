@@ -7,11 +7,13 @@
 import SECTION_NAMES from "./content/sectionNames"
 import HERO_INFO from "./content/home";
 import FALLBACK_TEXT from "./content/fallbackText";
+import ABOUT_INFO from "./content/about";
 
 const staticString = {
     sectionNames: SECTION_NAMES,
     sectionContent: {
-        home: HERO_INFO
+        home: HERO_INFO,
+        about: ABOUT_INFO,
     },
     fallbackText: FALLBACK_TEXT,
 }

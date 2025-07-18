@@ -22,11 +22,11 @@ export default function Navbar() {
     return (
         <nav className="bg-dark-bg-900">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <NavbarFavicon LogoImage={MyLogo}>MIGUEL FERNANDEZ</NavbarFavicon>
+                <NavbarFavicon url={"/"} LogoImage={MyLogo}>MIGUEL FERNANDEZ</NavbarFavicon>
                 <BurgerButton onClickEvent={()=> setIsMenuOpen(!isMenuOpen)}>
-                    <BugerButtonIcon></BugerButtonIcon>
+                    <BugerButtonIcon/>
                 </BurgerButton>
-                <NavbarItemBar isOpen={isMenuOpen}></NavbarItemBar>
+                <NavbarItemBar isOpen={isMenuOpen} onClickEvent={() => setIsMenuOpen(!isMenuOpen)}></NavbarItemBar>
             </div>
         </nav>
     );
