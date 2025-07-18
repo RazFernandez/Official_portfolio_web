@@ -9,7 +9,7 @@ export default function Grid3x3Layout({ children }) {
 }
 
 
-export function Grid4x3Layout({ children }) {
+export function Grid5x3Layout({ children }) {
     return (
         <div className="w-full flex justify-center">
             <div className="grid gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-5 lg:gap-16 p-4">
@@ -19,3 +19,12 @@ export function Grid4x3Layout({ children }) {
     );
 }
 
+export function Grid4x3Layout({ children }) {
+    return (
+        <div className="w-full flex justify-center">
+            <div className="grid gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-4 lg:gap-16 p-4">
+                {children}
+            </div>
+        </div>
+    );
+}

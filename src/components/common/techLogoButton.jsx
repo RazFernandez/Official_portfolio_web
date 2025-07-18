@@ -8,10 +8,10 @@
  * - alt (string): Alt text for accessibility and SEO.
  */
 
-export default function TechLogoButton({ logoUrl, href = "#", alt = "Technology logo" }) {
+export default function TechLogoButton({ logoUrl, href: url = "#", alt = "Technology logo" }) {
     return (
         <a
-            href={href}
+            href={url}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block"

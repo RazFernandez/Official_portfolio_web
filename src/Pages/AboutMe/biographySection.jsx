@@ -28,7 +28,6 @@ export default function BiographySection() {
                     <img src={ProfileImage} width={500} alt="Laptop Logo" />
                 </div>
             </div>
-            <SectionButton />
         </section>
     );
 }

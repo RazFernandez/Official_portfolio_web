@@ -2,7 +2,7 @@ import HeadlineLayout from "../../components/layout/headlinesLayout";
 import HeadLine from "../../components/common/headlines";
 import staticString from "../../strings/strings";
 import TechLogoButton from "../../components/common/techLogoButton";
-import { Grid4x3Layout } from "../../components/layout/grid3x3Layout";
+import { Grid5x3Layout } from "../../components/layout/grid3x3Layout";
 import { TechToolBox } from "../../data/techToolBoxData";
 
 export default function TechToolBoxSection() {
@@ -13,12 +13,12 @@ export default function TechToolBoxSection() {
                 <HeadLine>{staticString.sectionNames.home[1]}</HeadLine>
             </HeadlineLayout>
 
-            <Grid4x3Layout>
+            <Grid5x3Layout>
                 {TechToolBox.map((tech) => {
                     return (<TechLogoButton key={tech.name} logoUrl={tech.iconUrl} href={tech.siteUrl} alt={tech.name} />);
                 })}
                
-            </Grid4x3Layout>
+            </Grid5x3Layout>
       </section>  
     );
 }
