@@ -31,3 +31,4 @@ src/test-components
 
 # Data for testing purposes
 src/data
+.vercel

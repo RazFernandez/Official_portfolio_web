@@ -1,7 +1,7 @@
 {
   "name": "official-portfolio-web",
   "author": "Miguel Fernández",
-  "homepage": "https://RazFernandez.github.io/Official_portfolio_web/",
+  "homepage": "https://miguel-portfolio-n4ux793kj.vercel.app",
   "description": "My main web portfolio to showcase projects",
   "license": "MIT",
   "private": true,
@@ -18,11 +18,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/RazFernandez/Official_portfolio_web.git"
+    "url": "https://github.com/RazFernandez/miguelfz-portfolio.git"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.8",
-    "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^6.30.1",

@@ -10,6 +10,9 @@ import { useLocation } from "react-router-dom";
 
 export default function NavbarItemBar({ isOpen, onClickEvent }) {
 
+    const githubLink = "https://github.com/RazFernandez"
+    const linkedInLink = "https://www.linkedin.com/in/mrfernández/"
+    const mediumLink = "https://medium.com/@RazielFernandez"
     /* 
     This structure is used to indicate the active 
     page of the protfolio web.
@@ -51,9 +54,9 @@ export default function NavbarItemBar({ isOpen, onClickEvent }) {
                 <NavbarItem isCurrentPage={isActive[3]} onClickEvent={onClickEvent} path={"/skills"}>SKILLS</NavbarItem>
                 <NavBarItemDropdown dropdownName={"SOCIAL MEDIA"} onClickEvent={openSubMenu}>
                     <NavbarMenuItems isOpen={isMenuOpen}>
-                        <NavbarSubItem onClickEvent={openSubMenu}>LinkedIn</NavbarSubItem>
-                        <NavbarSubItem onClickEvent={openSubMenu}>GitHub</NavbarSubItem>
-                        <NavbarSubItem onClickEvent={openSubMenu}>Medium</NavbarSubItem>
+                        <NavbarSubItem href={linkedInLink} onClickEvent={openSubMenu}>LinkedIn</NavbarSubItem>
+                        <NavbarSubItem href={githubLink} onClickEvent={openSubMenu}>GitHub</NavbarSubItem>
+                        <NavbarSubItem href={mediumLink} onClickEvent={openSubMenu}>Medium</NavbarSubItem>
                     </NavbarMenuItems>
                 </NavBarItemDropdown>
                 <NavBarItemIcon url={"https://github.com/RazFernandez"}>

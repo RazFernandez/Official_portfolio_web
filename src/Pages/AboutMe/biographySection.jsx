@@ -1,6 +1,5 @@
 import ProfileImage from "../../assets/images/Profile_Photo.png";
 import staticString from "../../strings/strings";
-import SectionButton from "../../components/common/sectionButton";
 
 export default function BiographySection() {
 
